@@ -19,13 +19,30 @@ You are free to fork this and customise it to your needs.
 />
 ```
 
-| Attribute  | Description                                                                                                                                |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `title`    | Title for the chat window                                                                                                                  |
-| `avatar`   | The avatar image to be shown in the floating button and the chat window. Empty value will either use config from DocuTalk or the 🤖 emoji. |
-| `noheader` | Setting this to `true` will disable the header.                                                                                            |
-| `welcome`  | A welcome message to be shown when a new chat begins                                                                                       |
-| `hint`     | Placeholder to show in the query input textbox                                                                                             |
-| `sendbg`   | Background color for the send button                                                                                                       |
-| `userbg`   | Background color for the user message bubble                                                                                               |
-| `botbg`    | Background color for the bot message bubble                                                                                                |
+You can pass any of the attributes listed below as `data-<attribute>="<value>"` on this script tag to further customise.
+
+### Floating Chat Button
+
+The following attributes apply to the floating-chat-button. The embed js has some customisation available.
+
+| Attribute | Description                                                                                   |
+| --------- | --------------------------------------------------------------------------------------------- |
+| fabbg     | Background color for the Floating chat Button                                                 |
+| fabicon   | Image to be used in the Floating Image Button.                                                |
+|           | If the value does not start with `http://` or `https://` or `/`, it will be treated as text. |
+
+### Chat Interface
+
+You can pass the following attributes to override chat interface appearance. If not passed,
+values configured in your DocuTalk control panel will be used automatically.
+
+| Attribute  | Description                                                                                                        |
+| ---------- | ------------------------------------------------------------------------------------------------------------------ |
+| `title`    | Title for the chat window                                                                                          |
+| `avatar`   | The avatar image to be shown in the chat window. Empty value will either use config from DocuTalk or the 🤖 emoji. |
+| `noheader` | Setting this to `true` will disable the header.                                                                    |
+| `welcome`  | A welcome message to be shown when a new chat begins                                                               |
+| `hint`     | Placeholder to show in the query input textbox                                                                     |
+| `sendbg`   | Background color for the send button                                                                               |
+| `userbg`   | Background color for the user message bubble                                                                       |
+| `botbg`    | Background color for the bot message bubble                                                                        |
